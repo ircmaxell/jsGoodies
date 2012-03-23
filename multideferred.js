@@ -38,28 +38,4 @@
         
     }
     
-    
-    var def = new $.MultiDeferred();
-    
-    def.done(function() {
-        console.log('done');
-    })
-    
-    setTimeout(def.addCondition(), 500);
-    setTimeout(def.addCondition(), 1000);
-    setTimeout(def.addCondition(), 1500);
-    setTimeout(def.addCondition(), 2000);
-    setTimeout(def.addCondition(), 2500);
-    setTimeout(def.addCondition(), 3000);
-    setTimeout(def.addCondition(), 3500);
-    setTimeout(def.addCondition(), 4000);
-    setTimeout(def.addCondition(), 4500);
-    setTimeout(def.addCondition(), 5000);
-    setTimeout(def.addCondition(), 5500);
-    setTimeout(def.addCondition(), 6000);
-    setTimeout(def.addCondition(), 6500);
-    setTimeout(def.addCondition(), 7000);
-    setTimeout(def.addCondition(), 7500);
-    
-    def.resolve();
 })(jQuery);
