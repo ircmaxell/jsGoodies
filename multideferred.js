@@ -32,6 +32,7 @@
             },
             resolve: function() {
                 started = true;
+                checkResolve();
             }
         });
         
