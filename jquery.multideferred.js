@@ -21,7 +21,7 @@
                     $.error("Cannot add condition to a started handler");
                 }
                 var callback = function() {
-                    var key = conditions.indexOf(callback);
+                    var key = $.inArray(callback, conditions);
                     if (key != -1) {
                         conditions.splice(key, 1);
                     }
